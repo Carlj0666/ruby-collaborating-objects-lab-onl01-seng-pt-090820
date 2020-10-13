@@ -36,7 +36,7 @@ def artist_name=(artist)
   artist_new = Artist.find_or_create_by_name(artist)
 
   self.artist = artist_new
-  artist_new.add_song(song)
+  artist_new.add_song(self)
   
 end
   
